@@ -1,13 +1,16 @@
 # Sakura Kohi 桜珈琲
 
-A minimal, Tokyo-inspired coffee shop site built for the Keystone Digital Strategy
-front-end take-home assessment.
+A minimal, Japanese-inspired coffee shop site built for the Keystone Digital
+Strategy front-end take-home assessment.
 
-**Concept:** a quiet single-origin coffee counter in Shimokitazawa, Tokyo. The
-name and visual identity are named after *kintsugi* — the Japanese art of
-repairing broken pottery with gold — which shows up throughout the site as a
-recurring gold "seam" motif (section dividers, the logo mark, the customisation
-panel edge) rather than as decoration bolted on top.
+**Concept:** a quiet single-origin coffee counter with locations across the
+UK (Shoreditch, Manchester, Birmingham). The name and visual identity are
+named after *kintsugi* — the Japanese art of repairing broken pottery with
+gold — which shows up throughout the site as a recurring gold "seam" motif
+(section dividers, the wordmark, the customisation panel edge) rather than
+as decoration bolted on top. The colour palette (soft blush pink, deep
+charcoal-plum text, antique gold accent) was chosen to sit alongside that
+concept rather than default to a generic dark-mode template.
 
 ## Tech stack
 
@@ -29,7 +32,7 @@ specified in the brief.
 | `/` | Home / landing |
 | `/menu` | Menu grid with category filters, opens the customisation panel |
 | `/about` | Brand story |
-| `/locations` | Three physical locations, hours, addresses |
+| `/locations` | Three UK locations, hours, addresses |
 | `/contact` | Contact form (client-side only, no server call) |
 | `/cart` | Full order review, tax calculation, mock "place order" flow |
 
@@ -62,26 +65,37 @@ npm run build   # production build
 npm run start   # serve the production build
 ```
 
-## AI tool usage
+## My contribution vs. AI usage
 
-This project was built with Claude (Anthropic) as part of the workflow:
+I want to be upfront about how this was actually built, since the brief asks
+for that directly:
 
-- **Design direction & tokens** — Claude proposed the overall concept (a
-  kintsugi/sakura-themed Tokyo café), the color palette, font pairing, and the
-  "gold seam" as a single recurring signature element, rather than defaulting
-  to a generic dark-mode template.
-- **Scaffolding** — Claude generated the Next.js App Router structure, Tailwind
-  config, and all component/page files (nav, footer, cart context,
-  customisation panel, product cards, logo mark) in one pass.
-- **Copywriting** — all menu items, descriptions, location details, and the
-  "About" story copy were drafted by Claude to fit the brand voice, then
-  reviewed for tone and trimmed for concision.
-- **Debugging** — Claude ran `npm install` and `npm run build` locally inside
-  its own sandboxed environment to catch TypeScript and build errors before
-  handoff.
-- **Logo** — the kintsugi seal mark (`components/Logo.tsx`) was designed by
-  Claude as inline SVG: a circular seal with a five-petal sakura crack traced
-  in gold, echoing the kintsugi concept directly in the mark itself.
+**What I did:**
+- Set the initial brand direction and supplied reference images for the
+  wordmark logo style, the colour palette, and the founding concept
+- Made every real creative decision: the final slogan ("A quiet cup, poured
+  well."), which colour direction to use, which UK cities to feature, and the
+  call to drop the Tokyo origin story in favour of a fully UK-based one
+- Reviewed the site screen-by-screen at each stage and caught real issues —
+  including a layout bug where the homepage's featured-drinks grid only had
+  2 of 3 cards filled, and a text-contrast issue that needed fixing for
+  accessibility
+- Handled the entire Git/GitHub setup and deployment myself, including
+  debugging a nested-folder issue in the repo structure
+- Read and understood every section of the site well enough to explain the
+  reasoning behind it (e.g. the kintsugi naming logic) rather than just
+  shipping whatever was generated
 
-Everything was reviewed and adjusted by hand afterwards — no code was accepted
-without reading it first.
+**What Claude did:**
+- Scaffolded the Next.js App Router structure, Tailwind config, and all
+  component/page files in an initial pass
+- Implemented the customisation panel, cart logic, and the wordmark/seam
+  divider components based on my direction
+- Drafted menu copy, location details, and About page copy, which I then
+  reviewed and had revised where the tone or content needed changing
+- Ran `npm install` and `npm run build` locally in its own sandbox to catch
+  TypeScript and build errors before handoff
+
+Everything in the final repo was reviewed and adjusted by hand — no code was
+accepted without reading it first, and every design decision above was mine,
+not a default the AI picked on its own.
