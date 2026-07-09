@@ -19,7 +19,7 @@ export default function ContactPage() {
       </p>
       <h1 className="font-display text-4xl md:text-5xl text-bone mb-4">Contact</h1>
       <p className="font-body text-sm text-mist max-w-lg leading-relaxed mb-12">
-        Questions about catering, private bookings, or the beans themselves —
+        Questions about catering, private bookings, or the beans themselves:
         we read everything that comes through here.
       </p>
 
