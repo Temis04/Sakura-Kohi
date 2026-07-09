@@ -5,14 +5,14 @@ import SeamDivider from "@/components/SeamDivider";
 const timeline = [
   { year: "2026", label: "Shoreditch counter opens", detail: "Six stools in a converted print shop on Redchurch Street." },
   { year: "2026", label: "The roastery, Manchester", detail: "A drum roaster installed in the Northern Quarter window." },
-  { year: "2027", label: "Digbeth, Birmingham", detail: "Our smallest room yet — four seats and a standing counter." },
+  { year: "2027", label: "Digbeth, Birmingham", detail: "Our smallest room yet: four seats and a standing counter." },
 ];
 
 const values = [
   {
     glyph: "一",
     title: "One origin at a time",
-    body: "We carry a short, rotating list of single-origin beans and brew each one on the equipment it actually suits — no house blend hiding behind a dozen names.",
+    body: "We carry a short, rotating list of single-origin beans and brew each one on the equipment it actually suits, no house blend hiding behind a dozen names.",
   },
   {
     glyph: "静",
@@ -41,7 +41,7 @@ export default function AboutPage() {
         </blockquote>
         <p className="font-body text-sm text-mist mt-8 max-w-xl mx-auto leading-relaxed">
           Sakura Kohi opened in 2026 in a converted print shop on Redchurch Street,
-          Shoreditch — six stools, a two-group espresso machine, and a rule that's
+          Shoreditch. Six stools, a two-group espresso machine, and a rule that's
           never changed since: nobody gets rushed.
         </p>
       </section>
@@ -65,7 +65,7 @@ export default function AboutPage() {
             something to hide.
           </p>
           <p className="font-body text-sm text-mist leading-relaxed">
-            We borrowed the idea before we ever borrowed a coffee technique —
+            We borrowed the idea before we ever borrowed a coffee technique:
             sakura for the season everyone waits for, kohi because, in the end,
             that's what we actually pour.
           </p>
