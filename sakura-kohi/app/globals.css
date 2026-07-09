@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #D9B9AE transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(180deg, #f9ece7 0%, #f6e3db 45%, #f2ddd0 100%);
+  color: #2e2321;
+  line-height: 1.6;
+}
+
+::selection {
+  background: #b8863c;
+  color: #f6e3db;
+}
+
+/* Kintsugi gold seam divider */
+.seam-line {
+  stroke: #b8863c;
+  stroke-width: 1.25;
+  fill: none;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+.seam-line.in-view {
+  animation: seam 1.8s ease-out forwards;
+}
+
+/* Ambient petal field */
+.petal {
+  position: absolute;
+  top: -5%;
+  will-change: transform, opacity;
+  pointer-events: none;
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid #b8863c;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.grain::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
