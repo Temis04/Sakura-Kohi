@@ -25,7 +25,7 @@ export default function Home() {
             </h1>
             <p className="font-body text-base text-mist mt-7 max-w-md leading-relaxed">
               A quiet counter for single-origin espresso and seasonal sakura drinks.
-              No rush, no noise — just a good cup and a place to sit with it.
+              No rush, no noise. Just a good cup and a place to sit with it.
             </p>
             <div className="flex items-center gap-5 mt-10">
               <Link
