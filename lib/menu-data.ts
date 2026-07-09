@@ -146,7 +146,7 @@ export const menu: MenuItem[] = [
     name: "Matcha Basque Cheesecake",
     jp: "抹茶バスク",
     category: "Pastry",
-    description: "Burnt top, ceremonial matcha, no crust — just the cake.",
+    description: "Burnt top, ceremonial matcha. No crust, just the cake.",
     basePrice: 5.0,
     customizable: false,
   },
