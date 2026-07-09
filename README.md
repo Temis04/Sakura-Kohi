@@ -68,8 +68,6 @@ npm run start   # serve the production build
 
 ## My contribution vs. AI usage
 
-Here's how this was actually built, since the brief asks for that directly.
-
 **What I did:**
 - Set the initial brand direction and supplied reference images for the
   wordmark logo style, the colour palette, and the founding concept
@@ -97,5 +95,4 @@ Here's how this was actually built, since the brief asks for that directly.
   TypeScript and build errors before handoff
 
 Everything in the final repo was reviewed and adjusted by hand. No code was
-accepted without reading it first, and every design decision above was mine,
-not a default the AI picked on its own.
+accepted without reading it first, and every design decision above was mine.
