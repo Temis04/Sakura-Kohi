@@ -5,7 +5,7 @@ import SeamDivider from "@/components/SeamDivider";
 const timeline = [
   { year: "2026", label: "Shoreditch counter opens", detail: "Six stools in a converted print shop on Redchurch Street." },
   { year: "2026", label: "The roastery, Manchester", detail: "A drum roaster installed in the Northern Quarter window." },
-  { year: "2027", label: "Digbeth, Birmingham", detail: "Our smallest room yet: four seats and a standing counter." },
+  { year: "2027", label: "Digbeth, Birmingham — opening soon", detail: "Our next room. Four seats and a standing counter." },
 ];
 
 const values = [
