@@ -17,7 +17,7 @@ export default function MenuPage() {
       </p>
       <h1 className="font-display text-4xl md:text-5xl text-bone mb-4">The Menu</h1>
       <p className="font-body text-sm text-mist max-w-lg leading-relaxed mb-12">
-        Every espresso drink can be customised — size, milk, and a few seasonal extras.
+        Every espresso drink can be customised: size, milk, and a few seasonal extras.
         Pour overs and pastries are served as the counter intends.
       </p>
 
